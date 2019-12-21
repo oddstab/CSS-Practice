@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        /*以com結束的*/
+        /* h1[title$="com"] {
+            color: red;
+        } */
+
+        /*任何位置出現com*/
+        /* h1[title*="com"]{
+            color: blue;
+        } */
+
+        /*裡面以單字的方式出現的*/
+        /* h1[title~="com"]{
+            color: blueviolet;
+        } */
+
+        /*裡面以單字開頭出現或-連接的*/
+        h1[title|="com"]{
+            color: #127345;
+        }
     </style>
 </head>
+
 <body>
-    
+    <main>
+        <article>
+            <h1 title="QQQ">呵呵</h1>
+            <h1 title="QQQ.com">呵呵呵.com</h1>
+            <h1 title="QQQQQ com">我有com</h1>
+            <h1 title="com-QQQ">dash符號!!!</h1>
+            <aside>
+                <h2 >我是aside</h2>
+            </aside>
+        </article>
+    </main>
 </body>
+
 </html>
