@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            border:1px solid #ddd;
+            width: 110px;
+        }
+        input[type="text"] {
+            outline: none;
+            border:none;
+            width: 90px;
+        }
+
+        span::after {
+            content: "\ff05";
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text">
+        <span id="s"></span>
+    </div>
+    <script>
+        let s = document.querySelector("#s");
+        var ss =  s.after();
+        s.addEventListener("click",function(){
+            alert("1234");
+        });
+    </script>
+</body>
+
+</html>
