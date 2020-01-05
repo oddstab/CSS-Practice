@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*轉換成float後會變成inline-block*/
+        main {
+            border:1px solid #000;
+            width: 200px;
+            margin: 0 auto;
+            height: 30px;
+            padding: 20px;
+        }
+
+        main span {
+            border:1px solid #ddd;
+            float: left;
+        }
+        main span:nth-of-type(2){
+            border:1px solid #123;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <span>
+            minecraft.com
+        </span>
+        <span>
+            我的世界
+        </span>
+    </main>
+</body>
+
+</html>

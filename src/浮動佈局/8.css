@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #f3f3f3;
+}
+
+header {
+  background: #fff;
+  -webkit-box-shadow: 0 5px 5px #ddd;
+          box-shadow: 0 5px 5px #ddd;
+  border-bottom: 5px solid #b1841b;
+}
+
+header nav {
+  padding: 20px 10px;
+  width: 1024px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header nav ul {
+  float: left;
+}
+
+header nav ul::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+header nav ul li {
+  float: left;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #6d6d6d;
+}
+
+header nav ul li a:hover {
+  color: #e01414;
+}
+
+header nav div.button {
+  float: right;
+  width: 100px;
+}
+
+header nav div.button button {
+  color: #5a5a5a;
+  background: #ffb834;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+header nav div.button button:hover {
+  cursor: pointer;
+  color: white;
+  background: #da9311;
+}
+
+main {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+main:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+main article {
+  height: 300px;
+  width: 800px;
+  background: #0f0;
+  float: left;
+}
+
+main aside {
+  width: 180px;
+  height: 300px;
+  float: right;
+  background: #f00;
+}
+
+footer {
+  background: #fff;
+  border-top: 1px solid #ddd;
+  padding: 30px;
+}
+
+footer div {
+  text-align: center;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=8.css.map */

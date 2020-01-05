@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h2{
+            display: inline-block;
+        }
+        h2:hover::after{
+            content: attr(data-name);
+            color: green;
+            background-color: #58aa2e;
+            padding: 10px 30px;
+            border:1px solid #ddd;
+            box-shadow: 0 0 5px red;
+        }
+    </style>
+</head>
+<body>
+    <h2 data-name="我的世界">minecraft.com</h2>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        main{
+            border: 1px solid #000;
+            width: 420px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        main:after{
+            content:"";
+            clear: both;
+            display: block;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        div:nth-of-type(1) {
+            border: 1px solid red;
+            float: left;
+        }
+
+        div:nth-of-type(2) {
+            background-color: aqua;
+            border:1px solid #000;
+            float: right;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <main>
+        <div></div>
+        <div></div>
+    </main>
+</body>
+
+</html>
