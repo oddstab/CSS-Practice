@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        article {
+            width: 150px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        article div {
+            height: 30px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            line-height: 2em;
+            color: #555;
+        }
+
+        article div:nth-of-type(1){
+            position: relative;
+            z-index: 2;
+        }
+        article:hover div:nth-of-type(1) {
+            border-bottom: none;
+            cursor: pointer;
+            background: #fff;
+        }
+
+        article:hover div:nth-of-type(2) {
+            display: inline-block;
+        }
+
+        article div:nth-of-type(2) {
+            width: 300px;
+            position: absolute;
+            right: 0;
+            top: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <div>購物車</div>
+        <div>目前沒有東西哦!!</div>
+    </article>
+</body>
+
+</html>

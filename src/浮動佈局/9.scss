@@ -1,0 +1,16 @@
+p{
+    border:1px solid #ddd;
+    font-size: 28px;
+    padding: 10px;
+    overflow: hidden;
+    span.shape{
+        width: 100px;
+        height: 100px;
+        float: left;
+        padding: 30px;
+        border: 5px solid red;
+        margin: 30px;
+        // shape-outside: padding-box;
+        shape-outside: content-box;//根據什麼來環繞
+    }
+}
