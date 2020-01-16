@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main{
+            background: #ddd;
+            flex: 1;
+        }
+        footer{
+            background:linear-gradient(45deg,#cc9,#f9f,#9ff,#9c9);
+            height: 60px;
+            display: flex;
+            justify-content: space-evenly;/*平均分配內容*/
+        }
+
+        footer div{
+            flex: 1;
+            text-align: center;
+            line-height: 3em;
+            color: #555;
+        }
+
+        footer div:nth-child(n+2){
+            border-left: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <main>111</main>
+    <footer>
+        <div>我的世界</div>
+        <div>微軟</div>
+        <div>Mojang</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 10px;
+        }
+
+        article {
+            border: 1px solid #000;
+            width: 500px;
+            height: 1000px;
+            display: flex;
+            /* flex-direction:column; */
+            /* flex-direction: column-reverse; */
+            flex-direction: row;/*預設*/
+        }
+
+        article * {
+            width: 100px;
+            height: 100px;
+            background: blueviolet;
+            margin: 10px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </article>
+</body>
+
+</html>
